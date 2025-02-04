@@ -1,0 +1,28 @@
+import time
+from colorama import Fore, Style, init
+
+# Initialize colorama
+init(autoreset=True)
+
+rose = f"""
+       {Fore.MAGENTA}.     .
+  ..  ."""-"""-.  ..
+  |  |  ,       ,  |  |
+  |  |  |       |  |  |
+  |  |  |       |  |  |
+  |  |  |       |  |  |
+  |  |  '-._.-'  |  |
+  |  |           |  |
+  '-'           '-'
+"""
+
+message = f"{Fore.RED}Dear Sakhya,\n{Fore.YELLOW}Like a rose, you make my world beautiful and bright.\n{Fore.CYAN}Sending you a virtual rose to remind you how special you are! 💖"
+
+print(Fore.GREEN + "Sending a special Rose to you...\n")
+time.sleep(2)
+
+for line in rose.split("\n"):
+    print(line)
+    time.sleep(0.3)
+
+print("\n" + message)
